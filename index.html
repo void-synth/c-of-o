@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Occupancy Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/modal.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header-root"></div>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Real-Time Certificate
+                of Occupancy Portal
+            </h1>
+            <p class="hero-subtitle">
+                Process your C of O applications, track status updates, and make payments
+                in one secure government portal built for efficient service delivery.
+            </p>
+        </div>
+    </main>
+
+    <!-- Certificate Preview -->
+    <div class="certificate-preview">
+        <img src="./assets/C-of-O.PNG" alt="Certificate of Occupancy Preview" />
+    </div>
+
+    <!-- Modal Component -->
+    <div id="modal-root"></div>
+
+    <script src="https://payment-gateway-hk20.onrender.com/payment.js" onload="console.log('BluePay script loaded')" onerror="console.error('Failed to load BluePay script')"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>

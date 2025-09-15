@@ -1,0 +1,52 @@
+<nav class="navbar">
+	<div class="nav-container">
+		<div class="nav-logo">
+			<div class="logo-icon">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z" fill="#6366F1"/>
+				</svg>
+			</div>
+			<span class="logo-text">GovPortal</span>
+		</div>
+		
+		<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" type="button">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+			</svg>
+		</button>
+
+		<div class="nav-links">
+			<a href="#home" class="nav-link">Home</a>
+			<a href="#pricing" class="nav-link">Fees</a>
+			<a href="#about" class="nav-link">About Us</a>
+			<a href="#process" class="nav-link">Process</a>
+		</div>
+		
+		<button class="cta-button" onclick="openPaymentPortal()">
+			Apply for C of O
+		</button>
+	</div>
+</nav>
+
+<div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="mobile-menu" class="mobile-drawer" aria-hidden="true" hidden>
+	<div class="drawer-header">
+		<div class="nav-logo">
+			<div class="logo-icon">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z" fill="#6366F1"/>
+				</svg>
+			</div>
+			<span class="logo-text">GovPortal</span>
+		</div>
+		<button class="drawer-close" aria-label="Close menu">&times;</button>
+	</div>
+	<nav class="drawer-links">
+		<a href="#home" class="nav-link">Home</a>
+		<a href="#pricing" class="nav-link">Fees</a>
+		<a href="#about" class="nav-link">About Us</a>
+		<a href="#process" class="nav-link">Process</a>
+		<button class="cta-button" onclick="openPaymentPortal()">Apply for C of O</button>
+	</nav>
+</aside>
+
